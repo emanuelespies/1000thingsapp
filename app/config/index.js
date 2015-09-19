@@ -16,7 +16,12 @@ var config = {
 		},
 	}
 }
-module.exports = function(mode) {
-	return config[mode || process.env[2] || 'local'] || config.local;
+module.exports = function() {
+	
+	if ( typeof NODE_ENV == 'production') {
+		return config['production']
+	} else {
+		return config['local'];
+	}
 }
 
