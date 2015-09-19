@@ -17,8 +17,8 @@ var config = {
 	}
 }
 module.exports = function() {
-	
-	if ( typeof process.env.NODE_ENV == 'production') {
+	console.log(process.env.NODE_ENV);
+	if ( process.env.NODE_ENV == 'production') {
 		return config['production']
 	} else {
 		return config['local'];
