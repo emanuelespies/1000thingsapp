@@ -8,7 +8,7 @@ var config = {
 	},
 	production: {
 		mode: 'production',
-		port: 5000,
+		port: process.env.PORT || 5000,
 		mongo: {
 			url: process.env.MONGOLAB_URI ||
 				process.env.MONGOHQ_URL	|| 
@@ -17,7 +17,6 @@ var config = {
 	}
 }
 module.exports = function() {
-	console.log(process.env.NODE_ENV);
 	if ( process.env.NODE_ENV == 'production') {
 		return config['production']
 	} else {
