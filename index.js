@@ -11,16 +11,8 @@ mongoose.connect(config.mongo.url, function(err, db) {
 	if(err) {
 		console.log('Sorry, there is no mongo db server running.');
 	} else {
-		var attachDB = function(req, res, next) {
-			req.db = db;
-			next();
-		};
-		app.all('/admin*', attachDB, function(req, res, next) {
-			Admin.run(req, res, next);
-		});			
-		app.all('/', attachDB, function(req, res, next) {
-			Home.run(req, res, next);
-		});		
+		console.log ('Succeeded connected to: ' + config.mongo.url);
+			
 		http.createServer(app).listen(config.port, function() {
 		  	console.log(
 		  		'Successfully connected to ' + config.mongo.url,
