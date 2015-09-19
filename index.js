@@ -9,9 +9,9 @@ var routes = require('./app/routes/index');
 var mongoose = require('mongoose');
 mongoose.connect(config.mongo.url, function(err, db) {
 	if(err) {
-		console.log('Sorry, there is no mongo db server running.');
+		console.log('Sorry, there is no mongo db server running. ' + config.mode " " + config.mongo.url);
 	} else {
-		console.log ('Succeeded connected to: ' + config.mongo.url);
+		console.log ('Succeeded connected to: ' +config.mode + " " + config.mongo.url);
 			
 		http.createServer(app).listen(config.port, function() {
 		  	console.log(
