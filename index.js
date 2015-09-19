@@ -7,7 +7,7 @@ var routes = require('./app/routes/index');
 
 // Connect to MongoDB
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://' + config.mongo.host + ':' + config.mongo.port + '/1000things', function(err, db) {
+mongoose.connect(config.mongo.url, function(err, db) {
 	if(err) {
 		console.log('Sorry, there is no mongo db server running.');
 	} else {
@@ -23,7 +23,7 @@ mongoose.connect('mongodb://' + config.mongo.host + ':' + config.mongo.port + '/
 		});		
 		http.createServer(app).listen(config.port, function() {
 		  	console.log(
-		  		'Successfully connected to mongodb://' + config.mongo.host + ':' + config.mongo.port,
+		  		'Successfully connected to ' + config.mongo.url,
 		  		'\nExpress server listening on port ' + config.port
 		  	);
 		});
@@ -74,10 +74,3 @@ app.use(function(err, req, res, next) {
 
 
 module.exports = app;
-
-
-
-
-app.listen(app.get('port'), function() {
-  console.log("Node app is running on port:" + app.get('port'))
-})
