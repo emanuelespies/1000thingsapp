@@ -46,6 +46,8 @@ a {
   height: 100px; }
 .one-thousand-home-layout .mdl-layout__header-row .mdl-navigation a {
   color: #212121; }
+.one-thousand-home-layout .mdl-layout__drawer .mdl-layout-title img {
+  width: 150px; }
 .one-thousand-home-layout .mdl-layout__drawer-button .material-icons {
   color: #212121; }
 .one-thousand-home-layout .mdl-layout-title img {
@@ -53,7 +55,7 @@ a {
 .one-thousand-home-layout .section--center {
   max-width: 860px; }
 .one-thousand-home-layout .one-thousand.wide-card-layout {
-  width: 845px; }
+  width: auto; }
 .one-thousand-home-layout .one-thousand.wide-card-layout .mdl-card__title {
   background: url("http://cache4.asset-cache.net/gc/537001261-darts-in-dartboard-gettyimages.jpg?v=1&c=IWSAsset&k=2&d=QN0G9EoNKEUg5uoLS5aZpBcQbP7I32GG0fqutdm8T6e5GqILqVvcVoZX97%2bz%2fYac") center/cover;
   color: white;

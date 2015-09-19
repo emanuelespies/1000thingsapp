@@ -45,6 +45,10 @@ a {
 		}
 	}
 
+	.mdl-layout__drawer .mdl-layout-title img {
+		width: 150px;
+	}
+
 	.mdl-layout__drawer-button .material-icons {
 		color: $black;
 	}
@@ -58,7 +62,7 @@ a {
 		max-width: 860px;
 	}
 	.one-thousand.wide-card-layout {
-		width: 845px;
+		width: auto;
 
 		.mdl-card__title {
 			background: url("http://cache4.asset-cache.net/gc/537001261-darts-in-dartboard-gettyimages.jpg?v=1&c=IWSAsset&k=2&d=QN0G9EoNKEUg5uoLS5aZpBcQbP7I32GG0fqutdm8T6e5GqILqVvcVoZX97%2bz%2fYac") center / cover; 
