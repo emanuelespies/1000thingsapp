@@ -23,8 +23,7 @@
     "express": "~4.13.0",
     "mongodb": "~2.0.35",
     "mongoose": "~3.8.21",
-    "jade": "~1.11.0",
-    "material-design-lite": "~1.0.4-2"
+    "jade": "~1.11.0"
   },
   "engines": {
     "node": "0.12.2"

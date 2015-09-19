@@ -3,10 +3,58 @@
 
 SUMMARY 
 
-1 - Reset
-2 - 
-
+1 - Colors 
+2 - Default
+3 - Home Page
 ======================== 
 */
+/**********************
+* 1: Colors 
+***********************/
+/* Deep Orange 600 */
+/* Grey 200 */
+/* Grey 900 */
+/* Red 800 */
+/**********************
+* 2: Default
+***********************/
 body {
-  background: #eee; }
+  background: #EEE; }
+
+a {
+  color: #F4511E; }
+
+.one-thousand-button-layout {
+  background: #F4511E;
+  color: white; }
+
+/**********************
+* 3: Home Page
+***********************/
+.one-thousand-home-layout {
+  /* content */
+  /* footer */ }
+.one-thousand-home-layout .mdl-layout__header-row {
+  height: 100px; }
+.one-thousand-home-layout .mdl-layout__header-row .mdl-navigation a {
+  color: #212121; }
+.one-thousand-home-layout .mdl-layout__drawer-button .material-icons {
+  color: #212121; }
+.one-thousand-home-layout .mdl-layout-title img {
+  width: 250px; }
+.one-thousand-home-layout .section--center {
+  max-width: 860px; }
+.one-thousand-home-layout .one-thousand.wide-card-layout {
+  width: 845px; }
+.one-thousand-home-layout .one-thousand.wide-card-layout .mdl-card__title {
+  background: url("http://cache4.asset-cache.net/gc/537001261-darts-in-dartboard-gettyimages.jpg?v=1&c=IWSAsset&k=2&d=QN0G9EoNKEUg5uoLS5aZpBcQbP7I32GG0fqutdm8T6e5GqILqVvcVoZX97%2bz%2fYac") center/cover;
+  color: white;
+  height: 250px; }
+.one-thousand-home-layout .one-thousand-logIn-forgetPass-layout {
+  margin: 10px 0; }
+.one-thousand-home-layout .one-thousand-card-layout {
+  width: auto; }
+.one-thousand-home-layout footer .mdl-logo {
+  margin-top: 0; }
+.one-thousand-home-layout footer .mdl-mini-footer__link-list {
+  color: #212121; }

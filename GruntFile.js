@@ -22,7 +22,7 @@ module.exports = function(grunt) {
 				 * Set project object
 				 */
 				project: {
-					assets: 'assets',
+					assets: 'public/assets',
 					src: '<%= project.assets %>/dev',
 					dist: '<%= project.assets %>/dist',
 					css: [
@@ -33,7 +33,7 @@ module.exports = function(grunt) {
 					]
 				},
 				projectIe: {
-					assets: 'assets',
+					assets: 'public/assets',
 					src: '<%= project.assets %>/dev',
 					dist: '<%= project.assets %>/dist',
 					css: [
@@ -78,7 +78,7 @@ module.exports = function(grunt) {
 					},
 					js: {
 						files: {
-								'<%= project.dist %>/js/built.min.js': ['<%= project.src %>/js/built.js']
+								'<%= project.dist %>/js/built.min.js': ['<%= project.dist %>/js/built.js']
 						}
 					}
 				},
@@ -117,7 +117,7 @@ module.exports = function(grunt) {
 				watch: {
 					sass: {
 						files: '<%= project.src %>/scss/{,*/}*.{scss,sass}',
-						tasks: ['sass:dev', 'sass:devIe', 'concat:jsBuilt', 'concat:cssBuilt', 'cssmin']
+						tasks: ['sass:dev', 'sass:devIe', 'concat:jsBuilt', 'concat:cssBuilt', 'cssmin', 'uglify:js']
 					}
 				}
 
