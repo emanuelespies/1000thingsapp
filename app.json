@@ -1,0 +1,7 @@
+{
+  "name": "1000 Things App",
+  "description": "Let's make your goals be real",
+  "repository": "https://github.com/heroku/one-thousand-things-app",
+  "logo": "",
+  "keywords": ["node", "express", "static"]
+}
