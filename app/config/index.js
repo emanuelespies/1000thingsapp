@@ -11,8 +11,7 @@ var config = {
 		port: process.env.PORT || 5000,
 		mongo: {
 			url: process.env.MONGOLAB_URI ||
-				process.env.MONGOHQ_URL	|| 
-				"mongodb://heroku_gqt2nnf1:nibqa6n4t0m4762e96943j44l4@ds051553.mongolab.com:51553/heroku_gqt2nnf1"
+				process.env.MONGOHQ_URL
 		},
 	}
 }
