@@ -7,7 +7,7 @@ html
 		
 		
 		title!= title
-	body
+	body(ng-app="1000Things" ng-controller="MainController")
 
 	div.one-thousand-layout.one-thousand-home-layout.mdl-layout.mdl-js-layout.mdl_layout__container
 		header.mdl-layout__header.mdl-layout__header.mdl-color--white
@@ -27,6 +27,20 @@ html
 				a.mdl-navigation__link(href="#signUp") Sign Up
 				a.mdl-navigation__link(href="#logIn") Log In
 		main.mdl-layout__content
+			ui-view
+				
+			footer.mdl-mini-footer.mdl-color--grey-400
+					div.mdl-mini-footer__left-section
+						ul.mdl-mini-footer__link-list
+							li
+								a(href="#") Help
+							li
+								a(href="#") Contact				
+					div.mdl-mini-footer__right-section
+						h6.mdl-logo
+							img(src='/img/logoBW.png' alt='1000thingsapp')
+
+		script(type="text/ng-template" id="/index.html")
 			article.section--center.mdl-grid
 				section.mdl-cell.mdl-cell--12-col
 					div.one-thousand.wide-card-layout.mdl-card.mdl-shadow--2dp
@@ -72,17 +86,10 @@ html
 								div.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
 									button.one-thousand-button-layout.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect
 										='Sign Up'
-			footer.mdl-mini-footer.mdl-color--grey-400
-				div.mdl-mini-footer__left-section
-					ul.mdl-mini-footer__link-list
-						li
-							a(href="#") Help
-						li
-							a(href="#") Contact				
-				div.mdl-mini-footer__right-section
-					h6.mdl-logo
-						img(src='/img/logoBW.png' alt='1000thingsapp')
+			
 
 
 
+		script(src='http://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js')
+		script(src='http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js')
 		script(src='/js/built.min.js')
