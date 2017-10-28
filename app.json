@@ -1,7 +1,27 @@
 {
-  "name": "1000 Things App",
-  "description": "Let's make your goals be real",
-  "repository": "https://github.com/heroku/one-thousand-things-app",
-  "logo": "",
-  "keywords": ["node", "express", "static"]
+  "name": "1000-things-app",
+  "version": "0.0.2",
+  "description": "1000 Things App - Second Try",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha test"
+  },
+  "engines": {
+    "node": "6.10.2"
+  },
+  "dependencies": {
+    "ejs": "2.5.6",
+    "express": "4.15.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/one-thousand-things-app"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }
